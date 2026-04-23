@@ -1,0 +1,108 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar {
+    background: #b08a5b;
+    color: white;
+    width: 100%;
+}
+
+/* FIXED ALIGNMENT USING GRID (better than flex here) */
+.topbar-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* LEFT */
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+/* CENTER (FIXED MISALIGNMENT) */
+.top-center {
+    text-align: center;
+}
+
+/* RIGHT */
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+/* ICON */
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+/* ================= DROPDOWN ================= */
+
+.dropdown {
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 36px;
+    right: 0; /* FIX alignment */
+    background: white;
+    color: black;
+    min-width: 120px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+/* OPTIONS */
+.dropdown-menu div {
+    padding: 8px 12px;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+/* HOVER (ONLY TEXT COLOR) */
+.dropdown-menu div:hover {
+    color: #b08a5b;
+}
+
+/* SHOW DROPDOWN */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

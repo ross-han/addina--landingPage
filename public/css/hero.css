@@ -1,0 +1,154 @@
+.hero {
+    width: 100vw;
+    min-height: 100vh;
+
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: flex;
+    align-items: center;
+
+    background: url("../images/bg.png") no-repeat center;
+    background-size: cover;
+}
+
+/* OPTIONAL OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3); /* light overlay */
+}
+
+/* CONTENT WRAPPER */
+.hero-content {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* LEFT */
+.hero-left {
+    margin-bottom: 10%;
+    width: 50%;
+}
+
+.tag {
+    background: #eee;        /* gray background */
+    color: #b08a5b;             /* text color */
+    display: inline-block;   /* important */
+    padding: 6px 12px;       /* spacing inside */
+    border-radius: 4px;      /* slight rounded corners */
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+
+.hero-left h1 {
+    font-size: 90px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.desc {
+    color: #555;
+    margin-bottom: 25px;
+    max-width: 450px;
+}
+
+/* BUTTON */
+/* COMMON BUTTON */
+.btn {
+    padding: 16px 36px;      /* bigger */
+    font-size: 16px;         /* bigger text */
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+}
+
+/* BUY NOW (Golden) */
+.primary {
+    background: #b08a5b;     /* golden */
+    color: white;
+    border: none;
+}
+
+.primary:hover {
+    background: #a8844f;     /* darker gold */
+}
+
+/* VIEW DETAILS (Gray) */
+.secondary {
+    background: #f2f2f2;     /* light gray */
+    color: #333;
+    border: none;
+}
+
+.secondary:hover {
+    background: #ddd;
+}
+/* RIGHT */
+.hero-right {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CIRCLE */
+.circle-img {
+    width: 520px; /* adjust based on design */
+    position: absolute;
+    z-index: 1;
+}
+
+/* DOT CONTAINER */
+.dots {
+    position: absolute;
+    right: -40px; /* adjust position */
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* DOT */
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ACTIVE DOT */
+.dot.active {
+    background: #b08a5b;
+    transform: scale(1.5);
+}
+/* IMAGES */
+.hero-img {
+    width: 650px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+
+/* ACTIVE IMAGE */
+.hero-img.active {
+    opacity: 1;
+}
