@@ -1,0 +1,42 @@
+.perks-section {
+    padding: 70px 0; /* increased from 40px */
+    background: #fff;
+}
+
+.perks-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px; /* more breathing space */
+}
+
+.perk-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* increased spacing */
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.perk-item:hover {
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+/* ICON BIGGER */
+.icon i {
+    font-size: 34px; /* was 26px */
+    color: #c8a97e;
+}
+
+/* TEXT BIGGER */
+.perk-item h4 {
+    margin: 0;
+    font-size: 20px; /* was 16px */
+    font-weight: 600;
+}
+
+.perk-item p {
+    margin: 0;
+    font-size: 15px; /* was 13px */
+    color: #777;
+}

@@ -1,0 +1,209 @@
+/* CARD */
+
+
+/* IMAGE (MAKE IT TALLER) */
+.product-img {
+    position: relative;
+    height: 360px;   /* 🔥 increase height */
+    background: #a4af6c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARD */
+.product-card {
+    min-width: 300px;   /* 🔥 important */
+    flex-shrink: 0;     /* prevent shrinking */
+    margin: 0;          /* ❌ remove auto margin */
+    text-align: left;
+}
+/* IMAGE */
+.product-img img {
+    max-width: 80%;
+    max-height: 80%;
+    transition: transform 0.4s ease;
+}
+
+/* IMAGE ZOOM */
+.product-card:hover img {
+    transform: scale(1.2);
+}
+
+/* ICONS */
+.product-overlay {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    display: flex;
+    gap: 14px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* ICON STYLE */
+.product-overlay i {
+    font-size: 20px;          /* bigger icon */
+    padding: 14px;            /* bigger circle */
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* HOVER */
+.product-overlay i:hover {
+    background: #c8a97e;
+    color: #fff;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* TEXT */
+.product-info {
+    margin-top: 15px;
+}
+
+/* TITLE */
+.product-info h4 {
+    font-size: 18px;
+}
+
+/* PRICE */
+.price {
+    color: #c8a97e;
+    font-size: 16px;
+}
+
+/* RATING */
+.rating i {
+    color: gold;
+    font-size: 15px;
+}
+
+/* ROW CONTAINER */
+.products-row {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+/* hide scrollbar (optional) */
+.products-row::-webkit-scrollbar {
+    display: none;
+}
+.products-row {
+    scrollbar-width: none;
+}
+
+/* WRAPPER */
+.products-wrapper {
+    position: relative;
+    padding: 80px 0;
+}
+
+/* ROW */
+.products-row {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+/* HIDE SCROLLBAR */
+.products-row::-webkit-scrollbar {
+    display: none;
+}
+.products-row {
+    scrollbar-width: none;
+}
+
+/* CARD */
+.product-card {
+    min-width: 300px;
+    flex-shrink: 0;
+}
+
+/* ARROWS */
+.arrow-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;              /* equal width & height → circle */
+    border-radius: 50%;        /* 🔥 makes it circular */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+    border: none;
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* ICON SIZE */
+.arrow-btn i {
+    font-size: 16px;
+}
+
+/* HOVER */
+.arrow-btn:hover {
+    background: #c8a97e;
+    color: #fff;
+}
+/* LEFT */
+.arrow-btn.left {
+    left: -20px;
+}
+
+/* RIGHT */
+.arrow-btn.right {
+    right: -20px;
+}
+
+/* HOVER */
+.arrow-btn:hover {
+    background: #c8a97e;
+    color: #fff;
+}
+
+.subtitle {
+    text-align: center;
+    display: inline-block;          /* 🔥 important */
+    background: #f3e9dc;            /* light background */
+    color: #c8a97e;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    padding: 6px 12px;
+    border-radius: 20px;            /* pill shape */
+
+    margin-bottom: 10px;
+}
+/* MAIN TITLE */
+.title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+
+.products-wrapper {
+    text-align: center;
+}

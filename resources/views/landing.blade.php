@@ -43,3 +43,7 @@
 </div>
 
 </section>
+
+@include('partials.perks')
+@include('partials.productBanner')
+@include('partials.products')

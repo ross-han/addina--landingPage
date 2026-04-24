@@ -4,6 +4,13 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hero.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/perks.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/products.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/productBanner.css') }}">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <title>Ecommerce</title>

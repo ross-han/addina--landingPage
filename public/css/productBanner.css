@@ -1,0 +1,101 @@
+/* SECTION */
+.featured-products {
+    padding: 20px 0;
+}
+
+/* REVERSE LAYOUT */
+.featured-card.reverse {
+    flex-direction: row-reverse;
+}
+
+/* GRID */
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* CARD */
+.featured-card {
+    height: 350px;
+    background: #e6f2ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 🔥 split left-right */
+    padding: 30px;
+}
+
+/* TEXT (LEFT SIDE) */
+.featured-content {
+    max-width: 50%;
+    color: #000;
+}
+
+/* BIGGER TEXT */
+.featured-content h3 {
+    font-size: 32px; /* 🔥 bigger */
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.featured-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* BUTTON */
+.featured-content button {
+    padding: 10px 18px;
+    background: #c8a97e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* IMAGE (RIGHT SIDE) */
+.featured-card img {
+    max-width: 45%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* OFFER TAG */
+.offer {
+    font-size: 14px;
+    font-weight: 600;
+    color: #c8a97e;
+    letter-spacing: 1px;
+}
+
+/* BIGGER PRODUCT NAME */
+.featured-content h3 {
+    font-size: 40px;   /* 🔥 bigger */
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* DESCRIPTION */
+.featured-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* BIGGER BUTTON */
+.featured-content button {
+    padding: 12px 24px;   /* 🔥 bigger */
+    font-size: 16px;
+    background: #c8a97e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* OPTIONAL HOVER */
+.featured-content button:hover {
+    opacity: 0.9;
+}
